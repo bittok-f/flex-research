@@ -1,0 +1,63 @@
+.cta {
+  min-height: 80vh;
+  border-top: var(--section-border);
+
+  grid-column: col-start 2 / col-end 11;
+  display: grid;
+  gap: 6rem;
+  place-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  transition: all 0.2s ease-in-out;
+
+  span {
+    display: inline-block;
+    font-size: 6rem;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-accent) 50%,
+      var(--color-secondary) 50%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    cursor: pointer;
+    justify-self: center;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(
+      to bottom,
+      #e8e9e9 20%,
+      var(--color-accent)
+    );
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: max-content;
+    padding: 1rem 8rem;
+    letter-spacing: 1px;
+    background-color: transparent;
+    position: relative;
+    border-radius: 10rem;
+    box-shadow: var(--box-shadow-dark);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+  }
+}

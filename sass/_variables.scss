@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #f1e5df;
+  --color-primary-light: #f2e7e2;
+  --color-primary-dark: #d8cec8;
+
+  --color-secondary: #1b181e;
+  --color-secondary-opacity: rgba(27, 24, 30, 0.8);
+  --color-secondary-light: #312f34;
+  --color-secondary-dark: #18151b;
+
+  --color-accent: #e37028;
+  --color-accent-opacity: rgba(227, 112, 40, 0.2);
+  --color-accent-light: #e57e3d;
+  --color-accent-dark: #cc6424;
+
+  --font-display-primary: 'Montserrat', sans-serif;
+  --font-display-heading: ;
+
+  --color-font-primary: #212529;
+  --color-font-dark-bg: #d2d3d4;
+  --color-font-dark-light-bg: #8d8d8f;
+
+  --section-border: 2px solid var(--color-font-dark-light-bg);
+
+  --box-shadow-dark: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  --box-shadow-light: 0 2rem 3rem rgba(255, 255, 255, 0.1);
+}
+
+//Breakpoints
+$bp-large: 1250px;
+$bp-html-font: 1000px;
+$bp-medium: 800px;
+$bp-small: 650px;

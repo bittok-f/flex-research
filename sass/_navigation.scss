@@ -1,0 +1,100 @@
+.navigation {
+  grid-column: col-start 1 / col-end 12;
+  background-color: var(--color-secondary);
+  padding: 0 4rem;
+  height: 8rem;
+  font-size: 1.5rem;
+  color: var(--color-font-dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    gap: 1rem;
+  }
+
+  &__logo {
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    background-image: linear-gradient(
+      45deg,
+      var(--color-accent-light) 50%,
+      var(--color-font-dark-light-bg) 50%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__list {
+    align-self: stretch;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  &__item {
+    height: 8rem;
+    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .active-tab {
+    background-color: var(--color-secondary-light);
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: block;
+    height: 100%;
+    line-height: 8rem;
+    text-decoration: none;
+    color: var(--color-font-dark-bg);
+    font-size: 2rem;
+    padding: 0 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__link:hover {
+    background-color: var(--color-secondary-light);
+  }
+
+  &__end {
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+}
+
+.fixed {
+  position: fixed;
+  background-color: var(--color-secondary);
+  transition: all 0.3s ease-in-out;
+}
